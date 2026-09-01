@@ -37,16 +37,13 @@ jobs:
       - name: Run tests
         run: pytest
 
-  docker-build-push:
+    docker-build-push:
     runs-on: ubuntu-latest
     needs: test
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: Debug OIDC claims
-        uses: github/actions-oidc-debugger@main
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
