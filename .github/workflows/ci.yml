@@ -37,7 +37,7 @@ jobs:
       - name: Run tests
         run: pytest
 
-    docker-build-push:
+  docker-build-push:
     runs-on: ubuntu-latest
     needs: test
 
