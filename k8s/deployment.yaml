@@ -19,7 +19,6 @@ spec:
     spec:
       containers:
         - name: production-cicd-app
-          image: YOUR_ACCOUNT_ID.dkr.ecr.eu-north-1.amazonaws.com/production-cicd-platform:YOUR_IMAGE_TAG
-
+          image: 637423165688.dkr.ecr.eu-north-1.amazonaws.com/production-cicd-platform:97806c22142c6e331f15a3baad0f788d69b64bb6
           ports:
             - containerPort: 8000
